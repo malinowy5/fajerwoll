@@ -1,0 +1,26 @@
+module hw_hash #(
+    parameter OUT_WIDTH = 17,       // Zmienna szerokość wyjścia (17 bitów dla L1, 13 dla L2)
+    parameter SEED = 32'h12345678   // Unikalne "ziarno" zapewniające różne wyniki dla każdej funkcji
+)(
+    input  wire [127:0] data_in,
+    output wire [OUT_WIDTH-1:0] hash_out
+);
+
+    // 1. Podział 128-bitowego strumienia na cztery łatwiejsze słowa 32-bitowe
+    wire [31:0] chunk0 = data_in[31:0];
+    wire [31:0] chunk1 = data_in[63:32];
+    wire [31:0] chunk2 = data_in[95:64];
+    wire [31:0] chunk3 = data_in[127:96];
+
+    // 2. Drzewo kombinacyjne bramek XOR (wykonuje się natychmiast)
+    // Używamy prostych przesunięć bitowych (Shift), aby uniknąć regularności
+    wire [31:0] mix1 = chunk0 ^ (chunk1 << 3) ^ SEED;
+    wire [31:0] mix2 = chunk2 ^ (chunk3 >> 2) ^ (SEED << 7);
+    
+    // 3. Dodatkowe mieszanie (Avalanche effect w wersji light)
+    wire [31:0] final_mix = mix1 ^ mix2 ^ (mix1 >> 11) ^ (mix2 << 5);
+
+    // 4. Przypisanie uciętego wyniku do wyjścia (Darmowe operacje modulo z potęgi 2!)
+    assign hash_out = final_mix[OUT_WIDTH-1:0];
+
+endmodule
