@@ -4,6 +4,7 @@ import random
 NUM_TESTS = 1000000
 
 if __name__ == "__main__":
+    random.seed(67)
     print("Ładowanie bazy autoryzowanych hostów...")
     with open("authorized_hosts.json", "r") as f:
         auth_hosts_list = json.load(f)
