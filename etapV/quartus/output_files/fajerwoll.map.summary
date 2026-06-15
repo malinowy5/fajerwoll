@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jun 05 14:44:21 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : fajerwoll
+Top-level Entity Name : fajerwoll
+Family : Cyclone IV E
+Total logic elements : 3,586
+    Total combinational functions : 3,219
+    Dedicated logic registers : 428
+Total registers : 428
+Total pins : 132
+Total virtual pins : 0
+Total memory bits : 3,801,088
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
