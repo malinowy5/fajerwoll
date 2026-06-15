@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['_24readmemb_0',['$readmemb',['../layer1__bloom_8v.html#a4872c9faa8bfb651df5161a20e92a4c2',1,'$readmemb(&quot;bloom_init.mem&quot;, bloom_0):&#160;layer1_bloom.v'],['../layer1__bloom_8v.html#a1e9bd5af68384d4c7d812344d121b2ad',1,'$readmemb(&quot;bloom_init.mem&quot;, bloom_1):&#160;layer1_bloom.v'],['../layer1__bloom_8v.html#a8ea177981f09921c4dec816f7d986e95',1,'$readmemb(&quot;bloom_init.mem&quot;, bloom_2):&#160;layer1_bloom.v'],['../layer1__bloom_8v.html#a0e6a2a1fd24987c84fbcdceac77bfb16',1,'$readmemb(&quot;bloom_init.mem&quot;, bloom_3):&#160;layer1_bloom.v'],['../layer1__bloom_8v.html#a5f0afaf7234a702821b7c348d432bb02',1,'$readmemb(&quot;bloom_init.mem&quot;, bloom_4):&#160;layer1_bloom.v']]],
+  ['_24readmemh_1',['$readmemh',['../layer2__cuckoo_8v.html#a6a5b81e432926c34d2767a940bbc7430',1,'$readmemh(&quot;cuckoo_bank0.mem&quot;, bank_0):&#160;layer2_cuckoo.v'],['../layer2__cuckoo_8v.html#a00ba17e0d2e455ca73f6592702068f56',1,'$readmemh(&quot;cuckoo_bank1.mem&quot;, bank_1):&#160;layer2_cuckoo.v'],['../layer2__cuckoo_8v.html#a8fc71ffa65993301f6ebae503cdcc0bf',1,'$readmemh(&quot;cuckoo_bank2.mem&quot;, bank_2):&#160;layer2_cuckoo.v']]]
+];
